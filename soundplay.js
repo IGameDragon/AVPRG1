@@ -3,7 +3,9 @@ var context = new AudioContext();
 var buttons = document.getElementsByClassName("drum");
 
 function playSound(value){
-    soundbuffer[value].play
+    soundbuffer[value].play;
+    console.log(value);
+    
 };
 
 soundbuffer =[];
