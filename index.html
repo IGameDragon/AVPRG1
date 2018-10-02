@@ -14,8 +14,26 @@
     <input type="text" id="myInput">
     <button id="mybutton">klick to convert</button>
     <div id="outputText"></div>
+    <button id="sound1">sound1</button>
+    <button id="sound2">klick to convert</button>
+    <button id="sound3">klick to convert</button>
+    <button id="sound4">klick to convert</button>
 
     <script src="converter.js"> </script>
+    <script>
+        function playSound(data){
+        var context = new AudioContext();
+        var sound = new Audio("sounds/sound1.wav");
+        var soundNode = context.createMediaElementSource(sound);
+        var gainNode = context.createGain;
+        soundNode.connect(context.destination);
+       
+        sound.play;
+        };
+        document.getElementById("sound1").addEventListener("click", function(){
+            playSound("sounds/sound1.wav")
+        }) ;
+    </script>
     
 
 </body>
