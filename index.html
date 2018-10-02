@@ -21,7 +21,7 @@
 
     <script src="converter.js"> </script>
     <script>
-        function playSound(data){
+        function playSound(){
         var context = new AudioContext();
         var sound = new Audio("sounds/sound1.wav");
         var soundNode = context.createMediaElementSource(sound);
@@ -31,7 +31,7 @@
         sound.play;
         };
         document.getElementById("sound1").addEventListener("click", function(){
-            playSound("sounds/sound1.wav")
+            playSound()
         }) ;
     </script>
     
